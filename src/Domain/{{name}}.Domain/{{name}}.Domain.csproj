@@ -1,0 +1,15 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+        <TargetFramework>net[[dotNetVersion]]</TargetFramework>
+        <RootNamespace>{{name}}.Domain</RootNamespace>
+        <AssemblyName>{{name}}.Domain</AssemblyName>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\..\Infrastructure\CrossCutting\{{name}}.CrossCutting\{{name}}.CrossCutting.csproj" />
+    </ItemGroup>
+
+</Project>

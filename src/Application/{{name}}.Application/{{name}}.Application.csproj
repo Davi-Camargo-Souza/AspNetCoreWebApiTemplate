@@ -1,0 +1,15 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+        <TargetFramework>net[[dotNetVersion]]</TargetFramework>
+        <RootNamespace>{{name}}.Application</RootNamespace>
+        <AssemblyName>{{name}}.Application</AssemblyName>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\..\Infrastructure\Data\{{name}}.Data\{{name}}.Data.csproj" />
+    </ItemGroup>
+
+</Project>

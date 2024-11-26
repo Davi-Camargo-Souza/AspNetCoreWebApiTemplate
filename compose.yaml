@@ -1,0 +1,6 @@
+﻿services:
+  template.webapi:
+    image: {{name}}.webapi
+    build:
+      context: .
+      dockerfile: {{name}}.WebApi/Dockerfile

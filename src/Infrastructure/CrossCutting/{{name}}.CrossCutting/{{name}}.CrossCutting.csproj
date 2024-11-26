@@ -1,0 +1,11 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+        <TargetFramework>net[[dotNetVersion]]</TargetFramework>
+        <RootNamespace>{{name}}.CrossCutting</RootNamespace>
+        <AssemblyName>{{name}}.CrossCutting</AssemblyName>
+    </PropertyGroup>
+
+</Project>
