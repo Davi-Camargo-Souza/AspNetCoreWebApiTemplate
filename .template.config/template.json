@@ -1,0 +1,34 @@
+{
+  "$schema": "http://json.schemastore.org/template",
+  "author": "DaviCamargo",
+  "classifications": ["WebAPI", "DDD", "Clean Architecture"],
+  "identity": "BaseWebApiTemplate",
+  "name": "Base Web API Template",
+  "shortName": "basewebapi",
+  "sourceName": "{{name}}",
+  "symbols": {
+    "dotNetVersion": {
+      "type": "parameter",
+      "description": "Versão do .NET a ser usada no TargetFramework (será usada a 8 por padrão)",
+      "datatype": "choice",
+      "defaultValue": "8",
+	  "replaces": "[[dotNetVersion]]",
+      "choices": [
+        { "choice": "5.0", "description": ".NET 5", "displayName": "5.0" },
+        { "choice": "6.0", "description": ".NET 6", "displayName": "6.0" },
+        { "choice": "7.0", "description": ".NET 7", "displayName": "7.0" },
+        { "choice": "8.0", "description": ".NET 8", "displayName": "8.0" },
+        { "choice": "9.0", "description": ".NET 9 (prévia)", "displayName": "9.0" }
+      ]
+    }
+  },
+  "primaryOutputs": [
+    {
+      "path": "{{name}}/src/{{name}}.WebApi/{{name}}.WebApi.csproj"
+    }
+  ],
+  "tags": {
+    "language": "C#",
+    "type": "project"
+  }
+}
